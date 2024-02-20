@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overscroll-behavior: none;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: #fafbfc;
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  background: #eee;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header a {
+  all: unset;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+header a:last-of-type {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: inherit;
+}
+
+main .hero {
+  position: relative;
+  height: fit-content;
+}
+main .hero .title {
+  font-size: 20vw;
+  line-height: 20vw;
+  font-weight: 800;
+  text-align: center;
+  margin: 0;
+  z-index: 1;
+}
+main .hero .image_cont {
+  width: 100%;
+}
+main .hero .image_cont img {
+  width: 100%;
+}
+main .reassurance {
+  padding: 32px 64px;
+}
+main .reassurance h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+main .reassurance ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main .reassurance ul li {
+  flex: 1 1 200px;
+  height: 300px;
+  margin: 16px;
+  background: lightgray;
+}
+main .content {
+  padding: 32px 64px;
+}
+main .content .header {
+  text-transform: uppercase;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+main .content .header span {
+  display: block;
+  width: 100px;
+  height: 2px;
+  background: #000;
+  margin-right: 8px;
+}
+main .content h2 {
+  font-size: 3rem;
+}
+main .content .card {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+main .content .card .text {
+  margin: 16px;
+  font-size: 1.1rem;
+}
+main .content .card .img {
+  width: 100%;
+  height: 250px;
+  background: lightgray;
+  flex: 1 1 150px;
+}
+
+footer {
+  border-top: 2px solid #eee;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
